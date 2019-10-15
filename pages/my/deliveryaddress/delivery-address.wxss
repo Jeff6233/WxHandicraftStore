@@ -1,0 +1,96 @@
+/* pages/my/deliveryaddress/delivery-address.wxss */
+.address-manage .footer{
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+}
+.address-manage .add-address{
+  background-color: rgb(57, 149, 235);
+  height: 35px;
+  line-height: 35px;
+  text-align: right;
+  color: aliceblue;
+}
+.address-manage .footer>button{
+  background-color: rgb(250, 10, 10);
+  border-radius: 0px;
+}
+.address-manage .footer>button::after{
+  border: none;
+}
+.address-manage .delivery-address{
+  border-left: 3px solid rgb(250, 10, 10);
+  border-top: 3px solid rgb(250, 10, 10);
+  border-bottom: 3px solid rgb(250, 10, 10);
+  height: 80px;
+  line-height: 40px;
+  left: 0;
+  width: 100%;
+  position: relative;
+}
+.address-manage .delivery-address2{
+  border-left: 3px solid rgb(189, 189, 189);
+  border-top: 3px solid rgb(189, 189, 189);
+  border-bottom: 3px solid rgb(189, 189, 189);
+  height: 80px;
+  line-height: 40px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: relative;
+}
+.address-manage .ingore-delete{
+  width: 100px;
+  height: 80px;
+  transform: translateX(100px);
+  position:absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(240, 82, 9, 0.507);
+  text-align: center;
+  line-height: 80px;
+  outline: 3px solid rgb(3, 57, 158);
+}
+.address-manage .ingore-delete >image{
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.address-manage .delivery-address .operation >image,.address-manage .delivery-address2 .operation >image{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.address-manage .delivery-address .operation,.address-manage .delivery-address2 .operation{
+  width: 10%;
+  float: right;
+}
+.address-manage .delivery-address .content, .address-manage .delivery-address2 .content{
+  float:left;
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.box{
+  overflow: hidden;
+}
+.box1{
+  background-color: red;
+  height: 80px;
+  position: relative;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.box2{
+  box-sizing: border-box;
+  background-color: green;
+  height: 80px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  transform: translateX(100px);
+}

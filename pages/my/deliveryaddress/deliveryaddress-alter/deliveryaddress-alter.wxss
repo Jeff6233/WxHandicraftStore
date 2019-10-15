@@ -1,0 +1,27 @@
+/* pages/my/deliveryaddress/deliveryaddress-alter/deliveryaddress-alter.wxss */
+.delivery-address-alter .alter-box>text{
+    width: 30%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 1px solid #eee;
+}
+.delivery-address-alter .alter-box>input{
+    width: 70%;
+    height: 50px;
+    float: right;
+    border-bottom: 1px solid #eee;
+}
+.delivery-address-alter .footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+.delivery-address-alter .footer>button{
+    width: 100%;
+    background-color: red;
+    border-radius: 0px;
+    color: white;
+}

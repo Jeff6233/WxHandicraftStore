@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/shopping/shopping",
+    "pages/my/my",
+    "pages/userinfo/userinfo",
+    "pages/src/product/product",
+    "pages/src/product/detail/detail",
+    "pages/shopping/order_detail/order_detail",
+    "pages/my/deliveryaddress/delivery-address",
+    "pages/my/deliveryaddress/deliveryaddress-add/deliveryaddress-add",
+    "pages/my/deliveryaddress/deliveryaddress-alter/deliveryaddress-alter"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Specialty Store",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/icon/index.png",
+        "selectedIconPath": "pages/icon/selected_index.png"
+      },
+      {
+        "pagePath": "pages/shopping/shopping",
+        "iconPath": "pages/icon/shopping.png",
+        "selectedIconPath": "pages/icon/selected_shopping.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "pages/icon/my.png",
+        "selectedIconPath": "pages/icon/selected_my.png"
+      }
+    ]
+  }
+}

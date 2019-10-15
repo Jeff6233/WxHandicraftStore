@@ -1,0 +1,13 @@
+<!--pages/my/deliveryaddress/deliveryaddress-add/deliveryaddress-add.wxml-->
+<view class="delivery-address-add">
+  <view class="add-box">
+    <text>省份</text><input type="text" placeholder="输入省份" bindinput="province" value="{{DeliveryAddressDetail.Province}}"/>
+    <text>城市</text><input type="text" placeholder="输入城市" bindinput="city" value="{{DeliveryAddressDetail.City}}"/>
+    <text>街道</text><input type="text" placeholder="输入街道" bindinput="street" value="{{DeliveryAddressDetail.Street}}"/>
+    <text>补充</text><input type="text" placeholder="输入补充" bindinput="additional" value="{{DeliveryAddressDetail.Additional}}"/>
+  </view>
+  <view class="footer">
+    <button bindtap="commitData">新增地址</button>
+  </view>
+    
+</view>

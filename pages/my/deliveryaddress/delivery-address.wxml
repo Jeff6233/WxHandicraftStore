@@ -1,0 +1,36 @@
+<!--pages/my/deliveryaddress/delivery-address.wxml-->
+<view class="address-manage">
+  <view class="add-address"><text bind:tap="addDeliveryAddress">✚新增收货地址</text></view>
+  <radio-group bindchange="selectedAddress">
+    <view wx:for="{{DeliveryAddress}}" wx:key="*this">
+      <view class="delivery-address" wx:if="{{item.Default}}" animation="{{item.isTouchMove||item.isReset?animation:null}}" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" data-id="{{item.Id}}">
+        <view class="content">
+          <view class="add-radio"><radio checked="ture" value="{{item.Id}}"/>默认地址</view>
+          <view class="address">{{item.Address}}</view>
+        </view>
+        <view class="operation">
+          <image bindtap="openDeliveryAddressAlter" data-deliveryid="{{item.Id}}" src="icon/alter.png"/>
+        </view>
+        <view class="ingore-delete" data-deliveryid="{{item.Id}}" bind:tap="removeAddress">
+          <image src="icon/remove2.png"/>
+        </view>
+      </view>
+      <view class="delivery-address2" wx:else animation="{{item.isTouchMove||item.isReset?animation:null}}" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" data-id="{{item.Id}}">
+        <view class="content">
+          <view class="add-radio"><radio value="{{item.Id}}"/>备选地址</view>
+          <view class="address">{{item.Address}}</view>
+        </view>
+        <view class="operation">
+          <image bindtap="openDeliveryAddressAlter" data-deliveryid="{{item.Id}}" src="icon/alter.png"/>
+        </view>
+        <view class="ingore-delete" data-deliveryid="{{item.Id}}" bind:tap="removeAddress">
+          <image src="icon/remove2.png"/>
+        </view>
+      </view>
+    </view>
+  </radio-group>
+
+  <view class="footer">
+    <button bindtap="setDefaultAddress">设为默认地址</button>
+  </view>
+</view>
