@@ -17,7 +17,7 @@ Page({
     bookclassify: [],
     bannerImage:[],
     product:[],
-    userId:null
+    userId:null,
   },
 
   /**
@@ -91,7 +91,23 @@ Page({
       path: 'pages/src/product/detail/detail'
       }
     },
-  
+  collect:function(){
+    var that=this;
+    wx.getStorage({
+      key: 'userId',
+      success: function(res) {
+        wx.request({
+          url: `http://49.234.207.234:234/api/UserInfo/AddMyCollect?userId=${res.data}&productId=${that.data.product.Id}`,
+          method:'GET',
+          success:function(res){
+            wx.showToast({
+              title: res.data,
+            })
+          }
+        })
+      },
+    })
+  },
   call:function(){
     wx.makePhoneCall({
       phoneNumber: '15906506583'

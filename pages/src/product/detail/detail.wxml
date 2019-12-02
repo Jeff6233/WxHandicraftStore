@@ -24,12 +24,12 @@
         <view class="navigation-icon"><image src="icon/home.png" /></view>
         <text class="icon-name">主页</text>
       </view>
-      <view class="navigation-combo">
+      <view class="navigation-combo" bindtap="collect">
         <view class="navigation-icon"><image src="icon/collect.png" /></view>
         <text class="icon-name">收藏</text>
       </view>
       <view class="navigation-combo" bindtap="call">
-        <view class="navigation-icon"><image src="icon/客服.png" /></view>
+        <view class="navigation-icon"><image src="icon/customer-service.png" /></view>
         <text class="icon-name">客服</text>
       </view>
       <view class="navigation-combo">
